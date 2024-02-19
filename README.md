@@ -76,13 +76,13 @@ Repository for the Bachelor Thesis "Features of GPT-2 for Improving Speech-Brain
    
 ## Run
 1. **Edit** main function in `./gpt2features_generate/Code/main.py` and generate the features which should be computed in the TRF.
-2. **Run** the `./gpt2features_generate/Code/main.py` file.
+2. Activate the `gpt2features_generate_env` environment and **run** the `./gpt2features_generate/Code/main.py` file.
 3. Check if `gpt2_feature_list.pkl` appears in the `./gpt2features_trf/data/` folder.
-4. **Run** `./gpt2features_trf/Code/main.py`. This may take some time depending on the number of features you have generated before. 
+4. Activate the `gpt2features_trf_env` environment and **run** `./gpt2features_trf/Code/main.py`. This may take some time depending on the number of features you have generated before. 
 The remaining time can be checked in the generated log files.
 5. The results are stored as `<feature_name>.pkl`. They contain the TRF coefficients, the correlation scores for the subjects, 
 the average correlation and the results from a paired t-test.
 6. Select a feature by **editing** the variable `filename_to_plot` in the main function of `./gpt2features_trf/Code/plot.py`.
-7. Plot the TRF results of the feature as butterfly and topomap plot by **running** `./gpt2features_trf/Code/main.py`
+7. Plot the TRF results of the feature as butterfly and topomap plot by **running** `./gpt2features_trf/Code/main.py` in the `gpt2features_trf_env` environment.
 
 Author: Simon Kramer, 19.02.2024
