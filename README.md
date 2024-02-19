@@ -85,4 +85,4 @@ the average correlation and the results from a paired t-test.
 6. Select a feature by **editing** the variable `filename_to_plot` in the main function of `./gpt2features_trf/Code/plot.py`.
 7. Plot the TRF results of the feature as butterfly and topomap plot by **running** `./gpt2features_trf/Code/main.py` in the `gpt2features_trf_env` environment.
 
-Author: Simon Kramer, 19.02.2024
+2024/02/19
