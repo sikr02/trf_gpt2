@@ -6,13 +6,13 @@ from preprocess import *
 
 
 # transcript path
-PATH_TO_TRANSCRIPTS = "../../gpt2features_trf/sample_data/stories/story_parts/alignment_data/"
+PATH_TO_TRANSCRIPTS = os.path.join(os.path.split(__file__)[0], "../../gpt2features_trf/sample_data/stories/story_parts/alignment_data/")
 # feature path
-PATH_TO_FEATURES = "../../gpt2features_trf/data/"
+PATH_TO_FEATURES = os.path.join(os.path.split(__file__)[0], "../../gpt2features_trf/data/")
 
 
 def main():
-    titles, stories = load_stories(os.path.join(os.path.split(__file__)[0], PATH_TO_TRANSCRIPTS))
+    titles, stories = load_stories(PATH_TO_TRANSCRIPTS)
 
     print("Load hidden states: ", end="")
     try:
@@ -31,7 +31,7 @@ def main():
     # feature_list = kmeans_pca_hidden_states_to_list(hidden_states, stories, pca_components=3, n_cluster=3)
 
     # store the feature list at the defined location
-    with open(os.path.join(os.path.split(__file__)[0], PATH_TO_FEATURES, "gpt2_feature_list.pkl"), "wb") as f:
+    with open(os.path.join(PATH_TO_FEATURES, "gpt2_feature_list.pkl"), "wb") as f:
         pickle.dump(feature_list, f)
 
     # TODO: compute trf with batch script
