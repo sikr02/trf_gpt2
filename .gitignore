@@ -7,3 +7,5 @@ gpt2features_trf/data/gpt2_feature_list.pkl
 
 gpt2features_trf/log/*
 gpt2features_trf/results/*
+
+gpt2features_trf/sample_data/
