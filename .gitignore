@@ -1,0 +1,9 @@
+gpt2features_generate/hidden_states_preload.pkl
+
+gpt2features_trf/Code/pyEEG/
+
+gpt2features_trf/data/eeg_data_preload.pkl
+gpt2features_trf/data/gpt2_feature_list.pkl
+
+gpt2features_trf/log/*
+gpt2features_trf/results/*
